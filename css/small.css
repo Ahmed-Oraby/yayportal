@@ -1,0 +1,90 @@
+.app-phone-container {
+  width: 350px;
+}
+/* .app-arrow img {
+  width: 220px;
+} */
+.app-phone {
+  font-size: 16px;
+  padding: 0;
+}
+.step-text {
+  font-size: 12px;
+}
+.app-phone img {
+  width: 100px;
+  height: 200px;
+}
+.step-title {
+  display: block;
+  margin-top: 20px;
+  margin-left: 0;
+}
+.step-text {
+  margin-top: 20px;
+}
+
+.black-arrow {
+  width: 250px;
+}
+.green-arrow {
+  width: 257px;
+}
+.black-arrow.line,
+.green-arrow.line {
+  width: 170px;
+  height: 120px;
+}
+.green-arrow-box {
+  width: 257px;
+  max-width: 257px;
+}
+.green-arrow-box.line {
+  width: 200px;
+}
+.app-arrow {
+  height: 115px;
+  margin: 0 auto;
+  width: 250px;
+}
+.footer .link {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.policy p {
+  font-size: 12px;
+}
+
+.links {
+  flex-direction: column;
+}
+
+.download-btns {
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.footer {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.qr-code {
+  margin-left: 10px;
+}
+
+.quick-links {
+  margin-top: 20px;
+}
+
+.logo-container {
+  justify-content: center;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 2rem;
+  height: 2rem;
+}
