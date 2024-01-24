@@ -148,7 +148,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(0, 0, 0, 0.75);
+  /* background: rgba(0, 0, 0, 0.75); */
   z-index: 1;
 }
 
@@ -611,4 +611,14 @@
 }
 #how-it-works {
   padding-top: 150px;
+}
+
+/* .video-container {
+  width: 80%;
+  margin: 0 auto;
+} */
+
+#myVideo {
+  min-width: 100%;
+  min-height: 100%;
 }
