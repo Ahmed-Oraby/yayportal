@@ -564,7 +564,7 @@ body {
   top: 50px;
   height: 550px;
   width: 250px;
-  overflow: scroll;
+  overflow: auto;
   margin-top: 85px;
 }
 .iphone-section h3 {
