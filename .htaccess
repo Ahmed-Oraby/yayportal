@@ -1,0 +1,11 @@
+RewriteEngine On
+#RewriteCond %{ENV:HTTPS} !on
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Options +FollowSymlinks 
+Options -Indexes
+RewriteRule ^contact$ index.html [NE,L]
+RewriteRule ^about$ index.html [NE,L]
+RewriteRule ^legal$ index.html [NE,L]
+RewriteRule ^terms$ index.html [NE,L]
+RewriteRule ^privacy$ index.html [NE,L]

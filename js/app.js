@@ -63,13 +63,69 @@ $(window).on('scroll', () => {
   lastScrollArrow = window.scrollY <= 0 ? 0 : window.scrollY;
 });
 
-$('#privacy').click(() => $('#modal-privacy').fadeIn(500));
-$('#close-privacy').click(() => $('#modal-privacy').fadeOut(500));
-$('#terms').click(() => $('#modal-terms').fadeIn(500));
-$('#close-terms').click(() => $('#modal-terms').fadeOut(500));
-$('#legal').click(() => $('#modal-legal').fadeIn(500));
-$('#close-legal').click(() => $('#modal-legal').fadeOut(500));
-$('#about').click(() => $('#modal-about').fadeIn(500));
-$('#close-about').click(() => $('#modal-about').fadeOut(500));
-$('#contact').click(() => $('#modal-contact').fadeIn(500));
-$('#close-contact').click(() => $('#modal-contact').fadeOut(500));
+$('#privacy-btn').click(() => {
+  $('#privacy').fadeIn(500);
+  window.location.hash = '#privacy';
+});
+$('#close-privacy').click(() => $('#privacy').fadeOut(500));
+
+$('#terms-btn').click(() => {
+  $('#terms').fadeIn(500);
+  // window.location.hash = '#terms';
+});
+$('#close-terms').click(() => $('#terms').fadeOut(500));
+
+$('#legal-btn').click(() => {
+  $('#legal').fadeIn(500);
+  // window.location.hash = '#legal';
+});
+$('#close-legal').click(() => $('#legal').fadeOut(500));
+
+$('#about-btn').click(() => {
+  $('#about').fadeIn(500);
+  // window.location.hash = '#about';
+});
+$('#close-about').click(() => $('#about').fadeOut(500));
+
+$('#contact-btn').click(() => {
+  $('#contact').fadeIn(500);
+  // window.location.hash = '#contact';
+});
+$('#close-contact').click(() => $('#contact').fadeOut(500));
+
+// window.addEventListener('hashchange', function () {
+//   setModalUrl();
+// });
+
+// function setModalUrl() {
+//   if (window.location.hash === '#privacy') {
+//     $('#privacy').fadeIn(500);
+//   } else if (window.location.hash === '#terms') {
+//     $('#terms').fadeIn(500);
+//   } else if (window.location.hash === '#legal') {
+//     $('#legal').fadeIn(500);
+//   } else if (window.location.hash === '#about') {
+//     $('#about').fadeIn(500);
+//   } else if (window.location.hash === '#contact') {
+//     $('#contact').fadeIn(500);
+//   }
+// }
+
+// setModalUrl();
+
+document
+  .querySelectorAll('.btn-link')
+  .forEach((item) => (item.textContent = item.textContent.trim()));
+
+const link = window.location.href;
+if (link.endsWith('/privacy')) {
+  $('#privacy').fadeIn(500);
+} else if (link.endsWith('/terms')) {
+  $('#terms').fadeIn(500);
+} else if (link.endsWith('/legal')) {
+  $('#legal').fadeIn(500);
+} else if (link.endsWith('/about')) {
+  $('#about').fadeIn(500);
+} else if (link.endsWith('/contact')) {
+  $('#contact').fadeIn(500);
+}

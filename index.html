@@ -6,6 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
+    <base href="/" />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" type="image/x-icon" rel="icon" />
@@ -40,6 +41,7 @@
       media="screen and (max-width: 600px)"
       href="./css/small.css"
     />
+    <link rel="stylesheet" href="css/fullpage.min.css" />
   </head>
 
   <body>
@@ -51,43 +53,6 @@
       <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
-
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-container text-light p-0">
-      <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="fa fa-map-marker-alt text-success me-2"></small>
-            <small>Fifty One tower, Buisness Bay, Dubai, UAE</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <small class="far fa-clock text-success me-2"></small>
-            <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
-          </div>
-        </div>
-        <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="fa fa-phone-alt text-success me-2"></small>
-            <small>+971 123 123 1234</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center mx-n2">
-            <a class="btn btn-square btn-link rounded-0 border-0" href=""
-              ><i class="fab fa-facebook-f text-success"></i
-            ></a>
-            <a class="btn btn-square btn-link rounded-0 border-0" href=""
-              ><i class="fab fa-twitter text-success"></i
-            ></a>
-            <a class="btn btn-square btn-link rounded-0 border-0" href=""
-              ><i class="fab fa-linkedin-in text-success"></i
-            ></a>
-            <a class="btn btn-square btn-link rounded-0" href=""
-              ><i class="fab fa-instagram text-success"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Topbar End -->
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
@@ -115,21 +80,6 @@
           <a href="#about-section" class="nav-item nav-link">About</a>
           <a href="#how-it-works" class="nav-item nav-link">How It Works</a>
           <a href="#contactus" class="nav-item nav-link">Contact</a>
-          <!-- <a href="courses.html" class="nav-item nav-link">Courses</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Pages</a
-            >
-            <div class="dropdown-menu bg-light m-0">
-              <a href="feature.html" class="dropdown-item">Features</a>
-              <a href="appointment.html" class="dropdown-item">Appointment</a>
-              <a href="team.html" class="dropdown-item">Our Team</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-            </div>
-          </div> -->
         </div>
         <a href="" class="btn btn-success py-4 px-lg-5 d-none d-lg-block"
           >Get Started<i class="fa fa-arrow-right ms-3"></i
@@ -138,82 +88,9 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- <div class="video-container"> -->
-      <video autoplay muted loop id="myVideo">
-        <source src="./img/bg-video.mp4" type="video/mp4">
-      </video>
-    <!-- </div> -->
-
-    <!-- Carousel Start -->
-    <!-- <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
-      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="w-100" src="img/carousel-1.jpg" alt="Image" />
-            <div class="carousel-caption">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-lg-7">
-                    <h1 class="display-2 text-light mb-5 animated slideInDown">
-                      Book a Ride Easily
-                    </h1>
-                    <a href="" class="btn btn-success btn-round py-sm-3 px-sm-5"
-                      >Learn More</a
-                    >
-                    <a
-                      href=""
-                      class="btn btn-round btn-light py-sm-3 px-sm-5 ms-3"
-                      >Our Application</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
-            <div class="carousel-caption">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-lg-7">
-                    <h1 class="display-2 text-light mb-5 animated slideInDown">
-                      Enjoy Your Trip With Our Luxury Cars
-                    </h1>
-                    <a href="" class="btn btn-round btn-success py-sm-3 px-sm-5"
-                      >Learn More</a
-                    >
-                    <a
-                      href=""
-                      class="btn btn-round btn-light py-sm-3 px-sm-5 ms-3"
-                      >Our Application</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#header-carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#header-carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div> -->
-    <!-- Carousel End -->
+    <video autoplay muted loop id="myVideo">
+      <source src="./img/bg-video.mp4" type="video/mp4" />
+    </video>
 
     <!-- Facts Start -->
     <div class="container-fluid facts py-5 pt-lg-0">
@@ -300,17 +177,28 @@
               />
             </div>
           </div>
-          <div id="about-section" class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div
+            id="about-section"
+            class="col-lg-6 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
             <div class="h-100">
               <h6 class="text-success text-uppercase mb-2">About Us</h6>
               <h1 class="display-6 mb-4">
                 Yay Drive is a professional luxury car booking application.
               </h1>
               <p>
-                For nearly two decades, our dedicated limousine and chauffeur services company transcends mere transportation. Our personal chauffeurs meticulously attend to our clients: attentive to their requirements, discreet, and mindful of their well-being.
+                For nearly two decades, our dedicated limousine and chauffeur
+                services company transcends mere transportation. Our personal
+                chauffeurs meticulously attend to our clients: attentive to
+                their requirements, discreet, and mindful of their well-being.
               </p>
               <p class="mb-4">
-                We take pride in offering a complete luxury experience, combining bespoke service and expert guidance. Our years of expertise translate into exceptional service quality. Our priority lies in delivering flawless service to our discerning clientele.
+                We take pride in offering a complete luxury experience,
+                combining bespoke service and expert guidance. Our years of
+                expertise translate into exceptional service quality. Our
+                priority lies in delivering flawless service to our discerning
+                clientele.
               </p>
               <div class="row g-2 mb-4 pb-2">
                 <div class="col-sm-6">
@@ -323,7 +211,8 @@
                   <i class="fa fa-check text-success me-2"></i>Afordable Fee
                 </div>
                 <div class="col-sm-6">
-                  <i class="fa fa-check text-success me-2"></i>Best Drivers & Cars
+                  <i class="fa fa-check text-success me-2"></i>Best Drivers &
+                  Cars
                 </div>
               </div>
               <div class="row g-4">
@@ -405,196 +294,6 @@
       </div>
     </div>
 
-    <!-- Courses Start -->
-    <!-- <div class="container-xxl courses my-6 py-6 pb-0">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 500px"
-        >
-          <h6 class="text-primary text-uppercase mb-2">Tranding Courses</h6>
-          <h1 class="display-6 mb-4">
-            Our Courses Upskill You With Driving Training
-          </h1>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="courses-item d-flex flex-column bg-white overflow-hidden h-100"
-            >
-              <div class="text-center p-4 pt-0">
-                <div
-                  class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4"
-                >
-                  $99
-                </div>
-                <h5 class="mb-3">Automatic Car Lessons</h5>
-                <p>
-                  Tempor erat elitr rebum at clita dolor diam ipsum sit diam
-                  amet diam et eos
-                </p>
-                <ol class="breadcrumb justify-content-center mb-0">
-                  <li class="breadcrumb-item small">
-                    <i class="fa fa-signal text-primary me-2"></i>Beginner
-                  </li>
-                  <li class="breadcrumb-item small">
-                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Week
-                  </li>
-                </ol>
-              </div>
-              <div class="position-relative mt-auto">
-                <img class="img-fluid" src="img/courses-1.jpg" alt="" />
-                <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2" href=""
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div
-              class="courses-item d-flex flex-column bg-white overflow-hidden h-100"
-            >
-              <div class="text-center p-4 pt-0">
-                <div
-                  class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4"
-                >
-                  $99
-                </div>
-                <h5 class="mb-3">Highway Driving Lesson</h5>
-                <p>
-                  Tempor erat elitr rebum at clita dolor diam ipsum sit diam
-                  amet diam et eos
-                </p>
-                <ol class="breadcrumb justify-content-center mb-0">
-                  <li class="breadcrumb-item small">
-                    <i class="fa fa-signal text-primary me-2"></i>Beginner
-                  </li>
-                  <li class="breadcrumb-item small">
-                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Week
-                  </li>
-                </ol>
-              </div>
-              <div class="position-relative mt-auto">
-                <img class="img-fluid" src="img/courses-2.jpg" alt="" />
-                <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2" href=""
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="courses-item d-flex flex-column bg-white overflow-hidden h-100"
-            >
-              <div class="text-center p-4 pt-0">
-                <div
-                  class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4"
-                >
-                  $99
-                </div>
-                <h5 class="mb-3">International Driving</h5>
-                <p>
-                  Tempor erat elitr rebum at clita dolor diam ipsum sit diam
-                  amet diam et eos
-                </p>
-                <ol class="breadcrumb justify-content-center mb-0">
-                  <li class="breadcrumb-item small">
-                    <i class="fa fa-signal text-primary me-2"></i>Beginner
-                  </li>
-                  <li class="breadcrumb-item small">
-                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Week
-                  </li>
-                </ol>
-              </div>
-              <div class="position-relative mt-auto">
-                <img class="img-fluid" src="img/courses-3.jpg" alt="" />
-                <div class="courses-overlay">
-                  <a class="btn btn-outline-primary border-2" href=""
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 my-6 mb-0 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="bg-primary text-center p-5">
-              <h1 class="mb-4">Make Appointment</h1>
-              <form>
-                <div class="row g-3">
-                  <div class="col-sm-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="gname"
-                        placeholder="Gurdian Name"
-                      />
-                      <label for="gname">Your Name</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control border-0"
-                        id="gmail"
-                        placeholder="Gurdian Email"
-                      />
-                      <label for="gmail">Your Email</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="cname"
-                        placeholder="Child Name"
-                      />
-                      <label for="cname">Courses Type</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="cage"
-                        placeholder="Child Age"
-                      />
-                      <label for="cage">Car Type</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control border-0"
-                        placeholder="Leave a message here"
-                        id="message"
-                        style="height: 100px"
-                      ></textarea>
-                      <label for="message">Message</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-dark w-100 py-3" type="submit">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Courses End -->
-
     <!-- Features Start -->
     <div class="container-xxl py-6">
       <div class="container">
@@ -605,7 +304,13 @@
               Best Drivers, Cars & Airport transportation
             </h1>
             <p class="mb-5">
-              At Yay Drive, we specialize in providing premier Dubai Airport Transportation Services to and from all UAE airports and seaports. Alongside catering to business and private event transportation needs, such as meetings, conferences, sightseeing, and exclusive tours, our prime objective is to offer our clients the most dependable and secure transportation solutions at reasonable rates.
+              At Yay Drive, we specialize in providing premier Dubai Airport
+              Transportation Services to and from all UAE airports and seaports.
+              Alongside catering to business and private event transportation
+              needs, such as meetings, conferences, sightseeing, and exclusive
+              tours, our prime objective is to offer our clients the most
+              dependable and secure transportation solutions at reasonable
+              rates.
             </p>
             <div class="row gy-5 gx-4">
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
@@ -616,7 +321,8 @@
                   <h5 class="mb-0">Fully Licensed</h5>
                 </div>
                 <span>
-                  Yay Portal is a legal licensed application for car booking in Dubai
+                  Yay Portal is a legal licensed application for car booking in
+                  Dubai
                 </span>
               </div>
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
@@ -626,9 +332,7 @@
                   </div>
                   <h5 class="mb-0">Online Tracking</h5>
                 </div>
-                <span
-                  >Track your trip online in our application</span
-                >
+                <span>Track your trip online in our application</span>
               </div>
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                 <div class="d-flex align-items-center mb-3">
@@ -637,9 +341,7 @@
                   </div>
                   <h5 class="mb-0">Afordable Fee</h5>
                 </div>
-                <span
-                  >Our trips have best prices in Dubai</span
-                >
+                <span>Our trips have best prices in Dubai</span>
               </div>
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                 <div class="d-flex align-items-center mb-3">
@@ -649,7 +351,8 @@
                   <h5 class="mb-0">Best Drivers & Cars</h5>
                 </div>
                 <span
-                  >Enjoy your trip with our luxury comfortable cars & professional drivers</span
+                  >Enjoy your trip with our luxury comfortable cars &
+                  professional drivers</span
                 >
               </div>
             </div>
@@ -678,225 +381,6 @@
     </div>
     <!-- Features End -->
 
-    <!-- Team Start -->
-    <!-- <div class="container-xxl py-6">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 500px"
-        >
-          <h6 class="text-primary text-uppercase mb-2">Meet The Team</h6>
-          <h1 class="display-6 mb-4">We Have Great Experience Of Driving</h1>
-        </div>
-        <div class="row g-0 team-items">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item position-relative">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/team-1.jpg" alt="" />
-                <div class="team-social text-center">
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-light text-center p-4">
-                <h5 class="mt-2">Full Name</h5>
-                <span>Trainer</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-item position-relative">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/team-2.jpg" alt="" />
-                <div class="team-social text-center">
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-light text-center p-4">
-                <h5 class="mt-2">Full Name</h5>
-                <span>Trainer</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item position-relative">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/team-3.jpg" alt="" />
-                <div class="team-social text-center">
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-light text-center p-4">
-                <h5 class="mt-2">Full Name</h5>
-                <span>Trainer</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="team-item position-relative">
-              <div class="position-relative">
-                <img class="img-fluid" src="img/team-4.jpg" alt="" />
-                <div class="team-social text-center">
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-outline-primary border-2 m-1"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-light text-center p-4">
-                <h5 class="mt-2">Full Name</h5>
-                <span>Trainer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Team End -->
-
-    <!-- Testimonial Start -->
-    <!-- <div class="container-xxl py-6">
-      <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 500px"
-        >
-          <h6 class="text-primary text-uppercase mb-2">Testimonial</h6>
-          <h1 class="display-6 mb-4">What Our Clients Say!</h1>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="owl-carousel testimonial-carousel">
-              <div class="testimonial-item text-center">
-                <div class="position-relative mb-5">
-                  <img
-                    class="img-fluid rounded-circle mx-auto"
-                    src="img/testimonial-1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
-                    style="width: 60px; height: 60px"
-                  >
-                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                  </div>
-                </div>
-                <p class="fs-4">
-                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
-                </p>
-                <hr class="w-25 mx-auto" />
-                <h5>Client Name</h5>
-                <span>Profession</span>
-              </div>
-              <div class="testimonial-item text-center">
-                <div class="position-relative mb-5">
-                  <img
-                    class="img-fluid rounded-circle mx-auto"
-                    src="img/testimonial-2.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
-                    style="width: 60px; height: 60px"
-                  >
-                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                  </div>
-                </div>
-                <p class="fs-4">
-                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
-                </p>
-                <hr class="w-25 mx-auto" />
-                <h5>Client Name</h5>
-                <span>Profession</span>
-              </div>
-              <div class="testimonial-item text-center">
-                <div class="position-relative mb-5">
-                  <img
-                    class="img-fluid rounded-circle mx-auto"
-                    src="img/testimonial-3.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
-                    style="width: 60px; height: 60px"
-                  >
-                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                  </div>
-                </div>
-                <p class="fs-4">
-                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
-                </p>
-                <hr class="w-25 mx-auto" />
-                <h5>Client Name</h5>
-                <span>Profession</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Testimonial End -->
-
     <!-- Footer Start -->
     <div
       id="contactus"
@@ -907,9 +391,7 @@
         <div class="footer">
           <div class="col-lg-3 col-md-6">
             <!-- <h4 class="text-white mb-4">Get In Touch</h4> -->
-            <h2
-              class="logo-container text-white mb-4"
-            >
+            <h2 class="logo-container text-white mb-4">
               <!-- <i class="fa fa-car text-primary me-2"></i> -->
               <img class="logo" src="./img/logo_white.png" alt="" />
               Yay Portal
@@ -918,7 +400,8 @@
               <i class="fa fa-car text-white me-2"></i>Yay Portal
             </h2> -->
             <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>Fifty One tower, Buisness Bay, Dubai, UAE
+              <i class="fa fa-map-marker-alt me-3"></i>Fifty One tower, Buisness
+              Bay, Dubai, UAE
             </p>
             <p class="mb-2">
               <i class="fa fa-phone-alt me-3"></i>+971 44495600
@@ -929,76 +412,32 @@
           </div>
           <div class="col-lg-3 col-md-6 quick-links">
             <h4 class="text-light mb-4">Quick Links</h4>
-            <button id="about" class="btn btn-link">About Us</button>
-            <button id="contact" class="btn btn-link">Contact Us</button>
-            <button id="privacy" class="btn btn-link">Privacy Policy</button>
-            <button id="terms" class="btn btn-link">Terms of Use</button>
-            <button id="legal" class="btn btn-link">Legal Information</button>
+            <button id="about-btn" class="btn btn-link">About Us</button>
+            <button id="contact-btn" class="btn btn-link">Contact Us</button>
+            <button id="privacy-btn" class="btn btn-link">
+              Privacy Policy
+            </button>
+            <button id="terms-btn" class="btn btn-link">Terms of Use</button>
+            <button id="legal-btn" class="btn btn-link">
+              Legal Information
+            </button>
           </div>
           <div class="download-btns">
             <div>
               <a href="">
-                <img
-                  class="download-app"
-                  src="./img/google-btn.png"
-                  alt=""
-                />
+                <img class="download-app" src="./img/google-btn.png" alt="" />
               </a>
               <a href="">
-                <img
-                  class="download-app"
-                  src="./img/ios-btn.png"
-                  alt=""
-                />
+                <img class="download-app" src="./img/ios-btn.png" alt="" />
               </a>
               <a href="">
-                <img
-                  class="download-app"
-                  src="./img/huawei-btn.png"
-                  alt=""
-                />
+                <img class="download-app" src="./img/huawei-btn.png" alt="" />
               </a>
             </div>
             <div>
               <img src="./img/qr-code.png" class="qr-code" alt="" />
             </div>
           </div>
-          <!-- <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Popular Links</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
-          </div> -->
-          <!-- <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Newsletter</h4>
-            <form action="">
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control p-3 border-0"
-                  placeholder="Your Email Address"
-                />
-                <button class="btn btn-success">Sign Up</button>
-              </div>
-            </form>
-            <h6 class="text-white mt-4 mb-3">Follow Us</h6>
-            <div class="d-flex pt-2">
-              <a class="btn btn-square btn-outline-light me-1" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light me-1" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light me-1" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-square btn-outline-light me-0" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -1038,13 +477,12 @@
       </div>
     </div>
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-success btn-lg-square back-to-top"
       ><i class="bi bi-arrow-up"></i
     ></a>
 
-    <div id="modal-privacy" class="modal">
+    <div id="privacy" class="modal">
       <div class="iphone">
         <img
           id="close-privacy"
@@ -1054,170 +492,163 @@
         />
         <img class="iphone-img" src="./img/iphone15_1.png" alt="" />
         <div class="iphone-section">
+          <img class="modal-img" src="./img/privacy.jpeg" alt="" />
           <h3>Privacy Policy</h3>
           <div>
-            <p>This Privacy Policy outlines how Yay Portal collects, uses, and
-              protects the personal information you provide when using our website
-              or taxi services. </p>
-            <br>
+            <p>
+              This Privacy Policy outlines how Yay Portal collects, uses, and
+              protects the personal information you provide when using our
+              website or taxi services.
+            </p>
+            <br />
             <h4>Information Collection</h4>
             <p>
-            Personal Information: When you book or use our taxi services, we may collect information such
-            as your name, phone number, email address, physical address, as well
-            as location information to facilitate rides.
-            </p> 
-            <br>
+              Personal Information: When you book or use our taxi services, we
+              may collect information such as your name, phone number, email
+              address, physical address, as well as location information to
+              facilitate rides.
+            </p>
+            <br />
             <h4>Use of Information</h4>
-            <p>Service Provision: The information we collect is used to provide you
-              with our taxi services, manage your bookings, contact you when
-              necessary, and enhance our services.</p>
-              <br>
-             <h4>Data Sharing Confidentiality:</h4>
-             <p>We do not share your personal information with third parties without
-              your consent unless necessary to provide our taxi services or
-              required by law.</p>
-              <br>
-              <h4>Data Security Security:</h4>
-              <p>We are committed to
-                safeguarding the security of your personal information and take
-                measures to prevent unauthorized access or disclosure. Consent By
-                using our taxi services and accessing our website, you consent to
-                our Privacy Policy. For any inquiries regarding our Privacy Policy,
-                please contact us at info@yayportals.com or +971 44495600.
-              </p>
-              </div>
+            <p>
+              Service Provision: The information we collect is used to provide
+              you with our taxi services, manage your bookings, contact you when
+              necessary, and enhance our services.
+            </p>
+            <br />
+            <h4>Data Sharing Confidentiality:</h4>
+            <p>
+              We do not share your personal information with third parties
+              without your consent unless necessary to provide our taxi services
+              or required by law.
+            </p>
+            <br />
+            <h4>Data Security Security:</h4>
+            <p>
+              We are committed to safeguarding the security of your personal
+              information and take measures to prevent unauthorized access or
+              disclosure. Consent By using our taxi services and accessing our
+              website, you consent to our Privacy Policy. For any inquiries
+              regarding our Privacy Policy, please contact us at
+              info@yayportals.com or +971 44495600.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="modal-terms" class="modal">
+    <div id="terms" class="modal">
       <div class="iphone">
-        <img
-          id="close-terms"
-          class="close-btn"
-          src="./img/close.png"
-          alt=""
-        />
+        <img id="close-terms" class="close-btn" src="./img/close.png" alt="" />
         <img class="iphone-img" src="./img/iphone15_1.png" alt="" />
         <div class="iphone-section">
+          <img class="modal-img" src="./img/terms.jpeg" alt="" />
+
           <h3>Terms of Use</h3>
-          <p>
+          <div>
             These Terms of Use outline the terms and conditions for using the
             website and services of Yay Portal in Dubai. By using our website or
             services, you agree to these conditions in full. Website Usage Use
             of our website is subject to these Terms of Use. If you do not agree
-            to these conditions, please refrain from using our site. 
-            <h4>
-              Taxi
-              Bookings
-            </h4> 
-            Taxi bookings made through our website are subject to
-            availability and may be confirmed subject to verification by our
-            team.
+            to these conditions, please refrain from using our site.
+            <h4>Taxi Bookings</h4>
+            Taxi bookings made through our website are subject to availability
+            and may be confirmed subject to verification by our team.
             <h4>Liability</h4>
-            Yay Portal strives to provide accurate and
-            up-to-date information but cannot guarantee the accuracy,
-            completeness, or relevance of such information. We shall not be
-            liable for any direct or indirect damages resulting from the use of
-            our site or services. 
+            Yay Portal strives to provide accurate and up-to-date information
+            but cannot guarantee the accuracy, completeness, or relevance of
+            such information. We shall not be liable for any direct or indirect
+            damages resulting from the use of our site or services.
             <h4>Intellectual Property</h4>
-            All content on our website is the intellectual property of Yay Portal. No
-            reproduction or unauthorized use is permitted without written
-            consent. 
+            All content on our website is the intellectual property of Yay
+            Portal. No reproduction or unauthorized use is permitted without
+            written consent.
             <h4>Changes to Terms</h4>
-            We reserve the right to modify these Terms
-            of Use at any time. It is your responsibility to regularly review
-            this page for updates. Consent By using our website or taxi
-            services, you consent to these Terms of Use. For any inquiries
-            regarding our Terms of Use, please contact us at info@yayportals.com
-            or +971 44495600.
-          </p>
+            We reserve the right to modify these Terms of Use at any time. It is
+            your responsibility to regularly review this page for updates.
+            Consent By using our website or taxi services, you consent to these
+            Terms of Use. For any inquiries regarding our Terms of Use, please
+            contact us at info@yayportals.com or +971 44495600.
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="modal-legal" class="modal">
+    <div id="legal" class="modal">
       <div class="iphone">
-        <img
-          id="close-legal"
-          class="close-btn"
-          src="./img/close.png"
-          alt=""
-        />
+        <img id="close-legal" class="close-btn" src="./img/close.png" alt="" />
         <img class="iphone-img" src="./img/iphone15_1.png" alt="" />
         <div class="iphone-section">
+          <img class="modal-img" src="./img/legal.jpeg" alt="" />
           <h3>Legal Information</h3>
-          <p>
+          <div>
             Yay Portal endeavors to provide accurate and up-to-date information
             on this website, but we cannot guarantee the completeness, accuracy,
             or relevance of such information. Under no circumstances shall Yay
             Portal be liable for any direct or indirect damages arising from the
-            use of this website. 
+            use of this website.
             <h4>Intellectual Property</h4>
-            All content, trademarks, logos, and graphical elements on this website are the exclusive
-            property of Yay Portal, unless otherwise stated. Any unauthorized
-            use of these elements is strictly prohibited without prior written
-            consent fromYay Portal External Links This website may contain links
-            to third-party sites. Yay Portal has no control over the content of
-            these sites and disclaims any responsibility for their content or
-            accuracy. Inclusion of such links does not imply endorsement of
-            their content.
+            All content, trademarks, logos, and graphical elements on this
+            website are the exclusive property of Yay Portal, unless otherwise
+            stated. Any unauthorized use of these elements is strictly
+            prohibited without prior written consent fromYay Portal External
+            Links This website may contain links to third-party sites. Yay
+            Portal has no control over the content of these sites and disclaims
+            any responsibility for their content or accuracy. Inclusion of such
+            links does not imply endorsement of their content.
             <h4>Privacy</h4>
-            Yay Portal is committed to protecting the
-            privacy of visitors to this site. Please refer to our Privacy Policy
-            for information on the collection and use of personal data.
+            Yay Portal is committed to protecting the privacy of visitors to
+            this site. Please refer to our Privacy Policy for information on the
+            collection and use of personal data.
             <h4>Applicable Law</h4>
-            This site is subject to the laws of The United Arab
-            Emirates. Any disputes arising from the use of this site shall be
-            subject to the exclusive jurisdiction of the courts in The United
-            Arab Emirates. Contact For any questions regarding these legal
-            notices, please contact us at the following email address: info@yayportals.com
-          </p>
+            This site is subject to the laws of The United Arab Emirates. Any
+            disputes arising from the use of this site shall be subject to the
+            exclusive jurisdiction of the courts in The United Arab Emirates.
+            Contact For any questions regarding these legal notices, please
+            contact us at the following email address: info@yayportals.com
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="modal-about" class="modal">
+    <div id="about" class="modal">
       <div class="iphone">
-        <img
-          id="close-about"
-          class="close-btn"
-          src="./img/close.png"
-          alt=""
-        />
+        <img id="close-about" class="close-btn" src="./img/close.png" alt="" />
         <img class="iphone-img" src="./img/iphone15_1.png" alt="" />
         <div class="iphone-section">
+          <img class="modal-img" src="./img/about.jpeg" alt="" />
           <h3>About Us</h3>
-          <p>
+          <div>
             At Yay Portal, we are committed to delivering an exceptional
             transportation experience to our clients across Dubai and its
             surroundings. Our company is dedicated to providing luxury taxi
             services that blend comfort, elegance, and reliability to cater to
-            the needs of discerning travelers. 
+            the needs of discerning travelers.
             <h4>Our Commitment</h4>
-            We continuously strive to elevate the standards of taxi transportation by offering
-            premium services, luxury vehicles, and professional staff. Our goal
-            is to ensure that every trip provides our clients with an
-            outstanding travel experience. 
-            <h4>Luxury Fleet </h4>
-            Our carefully curated fleet of vehicles is chosen to provide superior comfort and stylish
-            transportation. From spacious limousines to high-end cars, we ensure
-            that every journey is a memorable experience. 
+            We continuously strive to elevate the standards of taxi
+            transportation by offering premium services, luxury vehicles, and
+            professional staff. Our goal is to ensure that every trip provides
+            our clients with an outstanding travel experience.
+            <h4>Luxury Fleet</h4>
+            Our carefully curated fleet of vehicles is chosen to provide
+            superior comfort and stylish transportation. From spacious
+            limousines to high-end cars, we ensure that every journey is a
+            memorable experience.
             <h4>Exceptional Customer Service</h4>
-            The dedicated team at Yay Portal is trained to deliver
-            exceptional customer service. We are available 24/7 to address your
+            The dedicated team at Yay Portal is trained to deliver exceptional
+            customer service. We are available 24/7 to address your
             transportation needs, ensuring real-time assistance. Our Mission Our
             mission is to become the preferred choice for travelers seeking
             luxury taxi services in Dubai. We aim for excellence at every stage
             of your journey. Get in Touch For bookings or any additional
             information, feel free to reach out to us. We look forward to
             providing you with a unique and refined transportation experience.
-          </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="modal-contact" class="modal">
+    <div id="contact" class="modal">
       <div class="iphone">
         <img
           id="close-contact"
@@ -1227,14 +658,48 @@
         />
         <img class="iphone-img" src="./img/iphone15_1.png" alt="" />
         <div class="iphone-section">
+          <img class="modal-img" src="./img/contact.jpeg" alt="" />
           <h3>Contact Us</h3>
-          <p>
+          <div>
             <h4>E-mail:</h4>
-            <p>info@yayportals.com</p> 
-            <br>
+            <p>info@yayportals.com</p>
             <h4>Phone:</h4>
-            <p>+971 44495600</p> 
-          </p>
+            <p>+971 44495600</p>
+          </div>
+          <div>
+            <h4>Send Us Message:</h4>
+            <form id="contact-form">
+              <div class="my-2">
+                <label class="form-label" for="contact-email"
+                  >Email address</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  name="contact-email"
+                  id="contact-email"
+                  style="background-color: rgb(244, 244, 244)"
+                />
+              </div>
+
+              <div class="my-2">
+                <label class="form-label text-dark" for="contact-message"
+                  >Message</label
+                >
+                <textarea
+                  name="contact-message"
+                  id="contact-message"
+                  cols="30"
+                  rows="5"
+                  class="form-control"
+                  style="background-color: rgb(244, 244, 244)"
+                ></textarea>
+              </div>
+              <div class="text-center mb-3">
+                <button type="submit" class="btn btn-info">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -1249,6 +714,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
