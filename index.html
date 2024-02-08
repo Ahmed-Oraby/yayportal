@@ -35,6 +35,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/card.css" />
 
     <link
       rel="stylesheet"
@@ -54,172 +55,403 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-      <a
-        href="index.html"
-        class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
-      >
-        <h2 class="m-0 logo-container">
-          <!-- <i class="fa fa-car text-primary me-2"></i> -->
-          <img class="logo" src="img/logo.jpeg" alt="" />
-          Portal
-        </h2>
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="/" class="nav-item nav-link active">Home</a>
-          <a href="#about-section" class="nav-item nav-link">About</a>
-          <a href="#how-it-works" class="nav-item nav-link">How It Works</a>
-          <a href="#contactus" class="nav-item nav-link">Contact</a>
+    <div class="main">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
+        <a
+          href="index.html"
+          class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
+        >
+          <h2 class="m-0 logo-container">
+            <img class="logo" src="img/logo.png" alt="" />
+            Portal
+          </h2>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="/" class="nav-item nav-link active">Home</a>
+            <a href="#about-section" class="nav-item nav-link">About</a>
+            <a href="#how-it-works" class="nav-item nav-link">How It Works</a>
+            <a href="#choose-us" class="nav-item nav-link">Why Choose Us</a>
+            <a href="#contactus" class="nav-item nav-link">Contact</a>
+          </div>
         </div>
-        <a href="" class="btn btn-success py-4 px-lg-5 d-none d-lg-block"
-          >Get Started<i class="fa fa-arrow-right ms-3"></i
-        ></a>
+      </nav>
+
+      <div id="video_bloc">
+        <video autoplay muted loop id="myVideo">
+          <source src="./img/bg-video.mp4" type="video/mp4" />
+        </video>
+
+        <!-- <div class="cardWrapper">
+          <div class="card">
+            <div class="card__name">
+              <p>OBAID</p>
+            </div>
+            <div class="card__number">
+              <div class="card__number--stars">****</div>
+              <div class="card__number--stars">****</div>
+              <div class="card__number--stars">****</div>
+              <div>1234</div>
+            </div>
+            <div class="highlight"></div>
+          </div>
+        </div> -->
+
+        <!-- Facts Start -->
+        <div class="container-fluid facts py-5 pt-lg-0">
+          <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+              <div class="cardWrapper">
+                <div class="card">
+                  <div class="flex">
+                    <div class="circle drive">
+                      <img class="logo" src="./img/logo_white.png" alt="" />
+                    </div>
+                    <div class="ps-4">
+                      <h5>Yay Drive</h5>
+                      <span>Book a ride easily using our app or chatbot</span>
+                    </div>
+                  </div>
+                  <div class="highlight"></div>
+                </div>
+              </div>
+              <div class="cardWrapper">
+                <div class="card">
+                  <div class="flex">
+                    <div class="circle stay">
+                      <img class="logo" src="./img/logo_white.png" alt="" />
+                    </div>
+                    <div class="ps-4">
+                      <h5>Yay Stay</h5>
+                      <span
+                        >Stay at our best hotels on your visits or
+                        holidays</span
+                      >
+                    </div>
+                  </div>
+                  <div class="highlight"></div>
+                </div>
+              </div>
+              <div class="cardWrapper">
+                <div class="card">
+                  <div class="flex">
+                    <div class="circle delivery">
+                      <img class="logo" src="./img/logo_white.png" alt="" />
+                    </div>
+                    <div class="ps-4">
+                      <h5>Yay Delivery</h5>
+                      <span
+                        >Get your stuff delivered at your door steps with just a
+                        few clicks</span
+                      >
+                    </div>
+                  </div>
+                  <div class="highlight"></div>
+                </div>
+              </div>
+              <!-- <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                <div
+                  class="shadow d-flex align-items-center h-100 p-4 yay-card"
+                  style="min-height: 150px"
+                >
+                  <div class="flex">
+                    <div class="circle drive">
+                      <img class="logo" src="./img/logo_white.png" alt="" />
+                    </div>
+                    <div class="ps-4">
+                      <h5>Yay Drive</h5>
+                      <span>Book a ride easily using our app or chatbot</span>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                <div
+                  class="shadow d-flex align-items-center h-100 p-4 yay-card"
+                  style="min-height: 150px"
+                >
+                  <div class="flex">
+                    <div class="circle stay">
+                      <img class="logo" src="./img/logo_white.png" alt="" />
+                    </div>
+                    <div class="ps-4">
+                      <h5>Yay Stay</h5>
+                      <span
+                        >Stay at our best hotels on your visits or
+                        holidays</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <div
+                  class="shadow d-flex align-items-center h-100 p-4 yay-card"
+                  style="min-height: 150px"
+                >
+                  <div class="flex">
+                    <div class="circle delivery">
+                      <img class="logo" src="./img/logo_white.png" alt="" />
+                    </div>
+                    <div class="ps-4">
+                      <h5>Yay Delivery</h5>
+                      <span
+                        >Get your stuff delivered at your door steps with just a
+                        few clicks</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-    <!-- Navbar End -->
 
-    <video autoplay muted loop id="myVideo">
-      <source src="./img/bg-video.mp4" type="video/mp4" />
-    </video>
+      <div id="about-section" class="transparent"></div>
 
-    <!-- Facts Start -->
-    <div class="container-fluid facts py-5 pt-lg-0">
-      <div class="container py-5 pt-lg-0">
-        <div class="row gx-0">
-          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-            <div
-              class="bg-white shadow d-flex align-items-center h-100 p-4"
-              style="min-height: 150px"
-            >
-              <div class="flex">
-                <div class="circle drive">
-                  <img class="logo" src="./img/logo_white.png" alt="" />
-                </div>
-                <div class="ps-4">
-                  <h5>Yay Drive</h5>
-                  <span>Book a ride easily using our app or chatbot</span>
-                </div>
+      <div id="how-it-works" class="app-phone-bg">
+        <div class="app-phone-container">
+          <div class="app-phone">
+            <img src="./img/0.png" alt="" />
+            <div>
+              <h2>How it works</h2>
+              <span class="step">Step 1</span>
+              <span class="step-title">Select pickup</span>
+              <p class="step-text">Select your pickup location anywhere</p>
+            </div>
+          </div>
+          <div class="app-arrow" id="arrow1">
+            <img class="black-arrow" src="./img/arrow-black.svg" alt="" />
+            <div class="green-arrow-box">
+              <img class="green-arrow" src="./img/arrow-green.svg" alt="" />
+            </div>
+          </div>
+          <div class="app-phone">
+            <div>
+              <span class="step">Step 2</span>
+              <span class="step-title">Select dropoff</span>
+              <p class="step-text">Select your dropff location anywhere</p>
+            </div>
+            <img src="./img/0.png" alt="" />
+          </div>
+          <div class="app-arrow flip" id="arrow2">
+            <img class="black-arrow flip" src="./img/arrow-black.svg" alt="" />
+            <div class="green-arrow-box flip">
+              <img
+                class="green-arrow flip"
+                src="./img/arrow-green.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="app-phone">
+            <img src="./img/0.png" alt="" />
+            <div>
+              <span class="step">Step 3</span>
+              <span class="step-title">Wait for driver</span>
+              <p class="step-text">Done! Just wait for our driver to arrive</p>
+            </div>
+          </div>
+          <div id="trigger_parralex1"></div>
+          <div class="app-arrow" id="arrow3">
+            <img class="black-arrow line" src="./img/black-line.svg" alt="" />
+            <div class="green-arrow-box line">
+              <img class="green-arrow line" src="./img/green-line.svg" alt="" />
+            </div>
+          </div>
+          <div class="app-phone">
+            <!-- <img src="./assets/images/0.png" alt=""> -->
+            <div style="text-align: right">
+              <span class="step">Step 4</span>
+              <span class="step-title">Enjoy!</span>
+              <p class="step-text">Welcome and enjoy your trip</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="choose-us" class="transparent"></div>
+
+      <!-- Footer Start -->
+      <div class="subscribe">
+        <div class="container">
+          <h2>Subscribe to our Newsletter</h2>
+          <form class="p-2">
+            <label for="newsletter" class="fs-4 mb-1">Your Email</label>
+            <input id="newsletter" type="text" class="form-control" />
+            <button class="btn btn-success m-3 text-uppercase" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        id="contactus"
+        class="container-fluid bg-dark text-light footer mb-6 mb-0 py-6"
+      >
+        <div class="container">
+          <div class="footer">
+            <div class="col-lg-3 col-md-6">
+              <!-- <h4 class="text-white mb-4">Get In Touch</h4> -->
+              <h2 class="logo-container text-white mb-4">
+                <!-- <i class="fa fa-car text-primary me-2"></i> -->
+                <img class="logo-white" src="./img/logo_white.png" alt="" />
+                Portal
+              </h2>
+              <!-- <h2 class="text-success mb-4">
+              <i class="fa fa-car text-white me-2"></i>Yay Portal
+            </h2> -->
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>Fifty One tower,
+                Buisness Bay, Dubai, UAE
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>+971 44495600
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>info@yayportals.com
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 quick-links">
+              <h4 class="text-light mb-4">Quick Links</h4>
+              <button id="about-btn" class="btn btn-link">About Us</button>
+              <button id="contact-btn" class="btn btn-link">Contact Us</button>
+              <button id="privacy-btn" class="btn btn-link">
+                Privacy Policy
+              </button>
+              <button id="terms-btn" class="btn btn-link">Terms of Use</button>
+              <button id="legal-btn" class="btn btn-link">
+                Legal Information
+              </button>
+            </div>
+            <div class="download-btns">
+              <div>
+                <a href="">
+                  <img class="download-app" src="./img/google-btn.png" alt="" />
+                </a>
+                <a href="">
+                  <img class="download-app" src="./img/ios-btn.png" alt="" />
+                </a>
+                <a href="">
+                  <img class="download-app" src="./img/huawei-btn.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <img src="./img/qr-code.png" class="qr-code" alt="" />
               </div>
             </div>
           </div>
-          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-            <div
-              class="bg-white shadow d-flex align-items-center h-100 p-4"
-              style="min-height: 150px"
-            >
-              <div class="flex">
-                <div class="circle stay">
-                  <img class="logo" src="./img/logo_white.png" alt="" />
-                </div>
-                <div class="ps-4">
-                  <h5>Yay Stay</h5>
-                  <span
-                    >Stay at our best hotels on your visits or holidays</span
-                  >
-                </div>
-              </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+      <div class="container-fluid bg-container text-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+          <div class="col-lg-7 px-5 text-start">
+            <div class="h-100 d-inline-flex align-items-center me-4">
+              <small class="fa fa-map-marker-alt text-success me-2"></small>
+              <small>Fifty One tower, Buisness Bay, Dubai, UAE</small>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center">
+              <small class="far fa-clock text-success me-2"></small>
+              <small>Mon - Sat : 09.00 AM - 09.00 PM</small>
             </div>
           </div>
-          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-            <div
-              class="bg-white shadow d-flex align-items-center h-100 p-4"
-              style="min-height: 150px"
-            >
-              <div class="flex">
-                <div class="circle delivery">
-                  <img class="logo" src="./img/logo_white.png" alt="" />
-                </div>
-                <div class="ps-4">
-                  <h5>Yay Delivery</h5>
-                  <span
-                    >Get your stuff delivered at your door steps with just a few
-                    clicks</span
-                  >
-                </div>
-              </div>
+          <div class="col-lg-5 px-5 text-end">
+            <div class="h-100 d-inline-flex align-items-center me-4">
+              <small class="fa fa-phone-alt text-success me-2"></small>
+              <small>+971 44495600</small>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center mx-n2">
+              <a class="btn btn-square rounded-0 m-1" href=""
+                ><i class="fab fa-facebook-f text-success"></i
+              ></a>
+              <a class="btn btn-square rounded-0 m-1" href=""
+                ><i class="fab fa-twitter text-success"></i
+              ></a>
+              <a class="btn btn-square rounded-0 m-1" href=""
+                ><i class="fab fa-linkedin-in text-success"></i
+              ></a>
+              <a class="btn btn-square rounded-0 m-1" href=""
+                ><i class="fab fa-instagram text-success"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Facts End -->
 
-    <!-- About Start -->
-    <div class="container-xxl py-6">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="position-relative overflow-hidden ps-5 pt-5 h-100"
-              style="min-height: 400px"
-            >
-              <img
-                class="position-absolute w-100 h-100"
-                src="img/img1.jpeg"
-                alt=""
-                style="object-fit: cover"
-              />
-              <img
-                class="position-absolute top-0 start-0 bg-white pe-3 pb-3"
-                src="img/about-2.jpg"
-                alt=""
-                style="width: 200px; height: 200px"
-              />
-            </div>
-          </div>
-          <div
-            id="about-section"
-            class="col-lg-6 wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <div class="h-100">
-              <h6 class="text-success text-uppercase mb-2">About Us</h6>
-              <h1 class="display-6 mb-4">
-                Yay Drive is a professional luxury car booking application.
-              </h1>
-              <p>
-                For nearly two decades, our dedicated limousine and chauffeur
-                services company transcends mere transportation. Our personal
-                chauffeurs meticulously attend to our clients: attentive to
-                their requirements, discreet, and mindful of their well-being.
-              </p>
-              <p class="mb-4">
-                We take pride in offering a complete luxury experience,
-                combining bespoke service and expert guidance. Our years of
-                expertise translate into exceptional service quality. Our
-                priority lies in delivering flawless service to our discerning
-                clientele.
-              </p>
-              <div class="row g-2 mb-4 pb-2">
-                <div class="col-sm-6">
-                  <i class="fa fa-check text-success me-2"></i>Fully Licensed
-                </div>
-                <div class="col-sm-6">
-                  <i class="fa fa-check text-success me-2"></i>Online Tracking
-                </div>
-                <div class="col-sm-6">
-                  <i class="fa fa-check text-success me-2"></i>Afordable Fee
-                </div>
-                <div class="col-sm-6">
-                  <i class="fa fa-check text-success me-2"></i>Best Drivers &
-                  Cars
-                </div>
+    <div id="about-us">
+      <div class="container-xxl py-6">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <div
+                class="position-relative overflow-hidden ps-5 pt-5 h-100"
+                style="min-height: 400px"
+              >
+                <img
+                  class="position-absolute w-100 h-100"
+                  src="img/img1.jpeg"
+                  alt=""
+                  style="object-fit: cover"
+                />
+                <img
+                  class="position-absolute top-0 start-0 bg-white pe-3 pb-3"
+                  src="img/about-2.jpg"
+                  alt=""
+                  style="width: 200px; height: 200px"
+                />
               </div>
-              <div class="row g-4">
-                <!-- <div class="col-sm-6">
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="h-100">
+                <h6 class="text-success text-uppercase mb-2">About Us</h6>
+                <h1 class="display-6 mb-4">
+                  Yay Drive is a professional luxury car booking application.
+                </h1>
+                <p>
+                  For nearly two decades, our dedicated limousine and chauffeur
+                  services company transcends mere transportation. Our personal
+                  chauffeurs meticulously attend to our clients: attentive to
+                  their requirements, discreet, and mindful of their well-being.
+                </p>
+                <p class="mb-4">
+                  We take pride in offering a complete luxury experience,
+                  combining bespoke service and expert guidance. Our years of
+                  expertise translate into exceptional service quality. Our
+                  priority lies in delivering flawless service to our discerning
+                  clientele.
+                </p>
+                <div class="row g-2 mb-4 pb-2">
+                  <div class="col-sm-6">
+                    <i class="fa fa-check text-success me-2"></i>Fully Licensed
+                  </div>
+                  <div class="col-sm-6">
+                    <i class="fa fa-check text-success me-2"></i>Online Tracking
+                  </div>
+                  <div class="col-sm-6">
+                    <i class="fa fa-check text-success me-2"></i>Afordable Fee
+                  </div>
+                  <div class="col-sm-6">
+                    <i class="fa fa-check text-success me-2"></i>Best Drivers &
+                    Cars
+                  </div>
+                </div>
+                <div class="row g-4">
+                  <!-- <div class="col-sm-6">
                   <a class="btn btn-success py-3 px-5" href="">Read More</a>
                 </div> -->
-                <!-- <div class="col-sm-6">
+                  <!-- <div class="col-sm-6">
                   <a
                     class="d-inline-flex align-items-center btn btn-outline-success border-2 p-2"
                     href="tel:+0123456789"
@@ -230,248 +462,96 @@
                     <span class="px-3">+012 345 6789</span>
                   </a>
                 </div> -->
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About End -->
-
-    <div id="how-it-works" class="app-phone-bg">
-      <div class="app-phone-container">
-        <h2>How it works</h2>
-        <div class="app-phone">
-          <img src="./img/0.png" alt="" />
-          <div>
-            <span class="step">Step 1</span>
-            <span class="step-title">Select pickup</span>
-            <p class="step-text">Select your pickup location anywhere</p>
-          </div>
-        </div>
-        <div class="app-arrow" id="arrow1">
-          <img class="black-arrow" src="./img/arrow-black.svg" alt="" />
-          <div class="green-arrow-box">
-            <img class="green-arrow" src="./img/arrow-green.svg" alt="" />
-          </div>
-        </div>
-        <div class="app-phone">
-          <div>
-            <span class="step">Step 2</span>
-            <span class="step-title">Select dropoff</span>
-            <p class="step-text">Select your dropff location anywhere</p>
-          </div>
-          <img src="./img/0.png" alt="" />
-        </div>
-        <div class="app-arrow flip" id="arrow2">
-          <img class="black-arrow flip" src="./img/arrow-black.svg" alt="" />
-          <div class="green-arrow-box flip">
-            <img class="green-arrow flip" src="./img/arrow-green.svg" alt="" />
-          </div>
-        </div>
-        <div class="app-phone">
-          <img src="./img/0.png" alt="" />
-          <div>
-            <span class="step">Step 3</span>
-            <span class="step-title">Wait for driver</span>
-            <p class="step-text">Done! Just wait for our driver to arrive</p>
-          </div>
-        </div>
-        <div class="app-arrow" id="arrow3">
-          <img class="black-arrow line" src="./img/black-line.svg" alt="" />
-          <div class="green-arrow-box line">
-            <img class="green-arrow line" src="./img/green-line.svg" alt="" />
-          </div>
-        </div>
-        <div class="app-phone">
-          <!-- <img src="./assets/images/0.png" alt=""> -->
-          <div style="text-align: right">
-            <span class="step">Step 4</span>
-            <span class="step-title">Enjoy!</span>
-            <p class="step-text">Welcome and enjoy your trip</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Features Start -->
-    <div class="container-xxl py-6">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-success text-uppercase mb-2">Why Choose Us!</h6>
-            <h1 class="display-6 mb-4">
-              Best Drivers, Cars & Airport transportation
-            </h1>
-            <p class="mb-5">
-              At Yay Drive, we specialize in providing premier Dubai Airport
-              Transportation Services to and from all UAE airports and seaports.
-              Alongside catering to business and private event transportation
-              needs, such as meetings, conferences, sightseeing, and exclusive
-              tours, our prime objective is to offer our clients the most
-              dependable and secure transportation solutions at reasonable
-              rates.
-            </p>
-            <div class="row gy-5 gx-4">
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="flex-shrink-0 btn-square bg-success me-3">
-                    <i class="fa fa-check text-white"></i>
+    <div id="why-choose">
+      <div class="container-xxl py-6">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <h6 class="text-success text-uppercase mb-2">Why Choose Us!</h6>
+              <h1 class="display-6 mb-4">
+                Best Drivers, Cars & Airport transportation
+              </h1>
+              <p class="mb-5">
+                At Yay Drive, we specialize in providing premier Dubai Airport
+                Transportation Services to and from all UAE airports and
+                seaports. Alongside catering to business and private event
+                transportation needs, such as meetings, conferences,
+                sightseeing, and exclusive tours, our prime objective is to
+                offer our clients the most dependable and secure transportation
+                solutions at reasonable rates.
+              </p>
+              <div class="row gy-5 gx-4">
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="flex-shrink-0 btn-square bg-success me-3">
+                      <i class="fa fa-check text-white"></i>
+                    </div>
+                    <h5 class="mb-0">Fully Licensed</h5>
                   </div>
-                  <h5 class="mb-0">Fully Licensed</h5>
+                  <span>
+                    Yay Portal is a legal licensed application for car booking
+                    in Dubai
+                  </span>
                 </div>
-                <span>
-                  Yay Portal is a legal licensed application for car booking in
-                  Dubai
-                </span>
-              </div>
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="flex-shrink-0 btn-square bg-success me-3">
-                    <i class="fa fa-check text-white"></i>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="flex-shrink-0 btn-square bg-success me-3">
+                      <i class="fa fa-check text-white"></i>
+                    </div>
+                    <h5 class="mb-0">Online Tracking</h5>
                   </div>
-                  <h5 class="mb-0">Online Tracking</h5>
+                  <span>Track your trip online in our application</span>
                 </div>
-                <span>Track your trip online in our application</span>
-              </div>
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="flex-shrink-0 btn-square bg-success me-3">
-                    <i class="fa fa-check text-white"></i>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="flex-shrink-0 btn-square bg-success me-3">
+                      <i class="fa fa-check text-white"></i>
+                    </div>
+                    <h5 class="mb-0">Afordable Fee</h5>
                   </div>
-                  <h5 class="mb-0">Afordable Fee</h5>
+                  <span>Our trips have best prices in Dubai</span>
                 </div>
-                <span>Our trips have best prices in Dubai</span>
-              </div>
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                <div class="d-flex align-items-center mb-3">
-                  <div class="flex-shrink-0 btn-square bg-success me-3">
-                    <i class="fa fa-check text-white"></i>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="flex-shrink-0 btn-square bg-success me-3">
+                      <i class="fa fa-check text-white"></i>
+                    </div>
+                    <h5 class="mb-0">Best Drivers & Cars</h5>
                   </div>
-                  <h5 class="mb-0">Best Drivers & Cars</h5>
+                  <span
+                    >Enjoy your trip with our luxury comfortable cars &
+                    professional drivers</span
+                  >
                 </div>
-                <span
-                  >Enjoy your trip with our luxury comfortable cars &
-                  professional drivers</span
-                >
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="position-relative overflow-hidden pe-5 pt-5 h-100"
-              style="min-height: 400px"
-            >
-              <img
-                class="position-absolute w-100 h-100"
-                src="img/about-1.jpg"
-                alt=""
-                style="object-fit: cover"
-              />
-              <img
-                class="position-absolute top-0 end-0 bg-white ps-3 pb-3"
-                src="img/about-2.jpg"
-                alt=""
-                style="width: 200px; height: 200px"
-              />
+            <div class="col-lg-6">
+              <div
+                class="position-relative overflow-hidden pe-5 pt-5 h-100"
+                style="min-height: 400px"
+              >
+                <img
+                  class="position-absolute w-100 h-100"
+                  src="img/about-1.jpg"
+                  alt=""
+                  style="object-fit: cover"
+                />
+                <img
+                  class="position-absolute top-0 end-0 bg-white ps-3 pb-3"
+                  src="img/about-2.jpg"
+                  alt=""
+                  style="width: 200px; height: 200px"
+                />
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Features End -->
-
-    <!-- Footer Start -->
-    <div
-      id="contactus"
-      class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container">
-        <div class="footer">
-          <div class="col-lg-3 col-md-6">
-            <!-- <h4 class="text-white mb-4">Get In Touch</h4> -->
-            <h2 class="logo-container text-white mb-4">
-              <!-- <i class="fa fa-car text-primary me-2"></i> -->
-              <img class="logo" src="./img/logo_white.png" alt="" />
-              Yay Portal
-            </h2>
-            <!-- <h2 class="text-success mb-4">
-              <i class="fa fa-car text-white me-2"></i>Yay Portal
-            </h2> -->
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>Fifty One tower, Buisness
-              Bay, Dubai, UAE
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+971 44495600
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>info@yayportals.com
-            </p>
-          </div>
-          <div class="col-lg-3 col-md-6 quick-links">
-            <h4 class="text-light mb-4">Quick Links</h4>
-            <button id="about-btn" class="btn btn-link">About Us</button>
-            <button id="contact-btn" class="btn btn-link">Contact Us</button>
-            <button id="privacy-btn" class="btn btn-link">
-              Privacy Policy
-            </button>
-            <button id="terms-btn" class="btn btn-link">Terms of Use</button>
-            <button id="legal-btn" class="btn btn-link">
-              Legal Information
-            </button>
-          </div>
-          <div class="download-btns">
-            <div>
-              <a href="">
-                <img class="download-app" src="./img/google-btn.png" alt="" />
-              </a>
-              <a href="">
-                <img class="download-app" src="./img/ios-btn.png" alt="" />
-              </a>
-              <a href="">
-                <img class="download-app" src="./img/huawei-btn.png" alt="" />
-              </a>
-            </div>
-            <div>
-              <img src="./img/qr-code.png" class="qr-code" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
-    <div class="container-fluid bg-container text-light p-0">
-      <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="fa fa-map-marker-alt text-success me-2"></small>
-            <small>Fifty One tower, Buisness Bay, Dubai, UAE</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <small class="far fa-clock text-success me-2"></small>
-            <small>Mon - Sat : 09.00 AM - 09.00 PM</small>
-          </div>
-        </div>
-        <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="fa fa-phone-alt text-success me-2"></small>
-            <small>+971 44495600</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center mx-n2">
-            <a class="btn btn-square btn-link rounded-0 border-0" href=""
-              ><i class="fab fa-facebook-f text-success"></i
-            ></a>
-            <a class="btn btn-square btn-link rounded-0 border-0" href=""
-              ><i class="fab fa-twitter text-success"></i
-            ></a>
-            <a class="btn btn-square btn-link rounded-0 border-0" href=""
-              ><i class="fab fa-linkedin-in text-success"></i
-            ></a>
-            <a class="btn btn-square btn-link rounded-0" href=""
-              ><i class="fab fa-instagram text-success"></i
-            ></a>
           </div>
         </div>
       </div>
@@ -498,7 +578,7 @@
             <p>
               This Privacy Policy outlines how Yay Portal collects, uses, and
               protects the personal information you provide when using our
-              website or taxi services.
+              website, mobile application, or taxi services.
             </p>
             <br />
             <h4>Information Collection</h4>
@@ -528,9 +608,11 @@
               We are committed to safeguarding the security of your personal
               information and take measures to prevent unauthorized access or
               disclosure. Consent By using our taxi services and accessing our
-              website, you consent to our Privacy Policy. For any inquiries
-              regarding our Privacy Policy, please contact us at
-              info@yayportals.com or +971 44495600.
+              website, or mobile application, you consent to our Privacy Policy.
+              For any inquiries regarding our Privacy Policy, please contact us
+              at
+              <a href="mailto:info@yayportals.com">info@yayportals.com</a> or
+              <a href="tel:+97144495600">+97144495600</a>.
             </p>
           </div>
         </div>
@@ -675,7 +757,7 @@
                 >
                 <input
                   class="form-control"
-                  type="text"
+                  type="email"
                   name="contact-email"
                   id="contact-email"
                   style="background-color: rgb(244, 244, 244)"
@@ -707,7 +789,7 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
+    <!--<script src="lib/wow/wow.min.js"></script>-->
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
@@ -715,5 +797,6 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/card.js"></script>
   </body>
 </html>

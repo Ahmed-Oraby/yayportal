@@ -129,3 +129,20 @@ if (link.endsWith('/privacy')) {
 } else if (link.endsWith('/contact')) {
   $('#contact').fadeIn(500);
 }
+
+function scrollFct() {
+  if ($(window).scrollTop() >= $('#trigger_parralex1').offset().top +
+    $('#trigger_parralex1').outerHeight() - window.innerHeight) {
+      console.log("1");
+    $("#about-us").css("display","none");
+    $("#why-choose").css("display","block");
+  } else {
+    console.log("2");
+    $("#about-us").css("display","block");
+    $("#why-choose").css("display","none");
+  }
+}
+$(window).on('scroll', function () {
+  scrollFct();
+});
+scrollFct();
