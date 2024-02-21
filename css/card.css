@@ -54,3 +54,8 @@
   margin-bottom: 10px;
   align-self: flex-start;
 }
+
+.subscribe .cardWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
